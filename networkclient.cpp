@@ -18,7 +18,7 @@ NetworkClient::NetworkClient(QObject* parent)
 
     // Connect socket reads/errors
     connect(_socket, &QTcpSocket::readyRead, [=] { onReadyRead(_socket); });
-    connect(_socket, QOverload<QAbstractSocket::SocketError>::of(&QAbstractSocket::error), this, &NetworkClient::onError);
+    connect(_socket, &QAbstractSocket::errorOccurred, this, &NetworkClient::onError);
 }
 
 void NetworkClient::tryJoinGame(QHostAddress const& hostAddress, PlayerColor color, QString const& username, quint16 port)

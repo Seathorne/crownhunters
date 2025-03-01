@@ -2,6 +2,8 @@
 #include "ui_networkwidget.h"
 
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QRegularExpressionValidator>
 
 NetworkWidget::NetworkWidget(QWidget* parent)
     : QWidget(parent)
@@ -17,15 +19,15 @@ NetworkWidget::NetworkWidget(QWidget* parent)
         ui->colorComboBox->addItem(color);
     }
 
-    QRegExpValidator* ipValidator = new QRegExpValidator(QRegExp("^((25[0-5]|(2[0-4]|1[0-9]|[1-9]|)[0-9])(\\.(?!$)|$)){4}$"), this);
+    QRegularExpressionValidator* ipValidator = new QRegularExpressionValidator(QRegularExpression("^((25[0-5]|(2[0-4]|1[0-9]|[1-9]|)[0-9])(\\.(?!$)|$)){4}$"), this);
     connect(ui->hostAddressLineEdit, &QLineEdit::textChanged, this, &NetworkWidget::validateUserSettings);
     ui->hostAddressLineEdit->setValidator(ipValidator);
 
-    QRegExpValidator* usernameValidator = new QRegExpValidator(QRegExp("^[a-zA-Z0-9]{1,16}$"), this);
+    QRegularExpressionValidator* usernameValidator = new QRegularExpressionValidator(QRegularExpression("^[a-zA-Z0-9]{1,16}$"), this);
     connect(ui->usernameLineEdit, &QLineEdit::textChanged, this, &NetworkWidget::validateUserSettings);
     ui->usernameLineEdit->setValidator(usernameValidator);
 
-    QRegExpValidator* chatValidator = new QRegExpValidator(QRegExp("^[ \\S]{0,100}$"), this);
+    QRegularExpressionValidator* chatValidator = new QRegularExpressionValidator(QRegularExpression("^[ \\S]{0,100}$"), this);
     connect(ui->chatLineEdit, &QLineEdit::textChanged, this, &NetworkWidget::validateChat);
     ui->chatLineEdit->setValidator(chatValidator);
 

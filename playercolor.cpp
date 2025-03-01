@@ -1,4 +1,7 @@
 #include "playercolor.h"
+#include "qobject.h"
+
+#include <QStringLiteral>
 
 QDataStream& operator<<(QDataStream& ds, PlayerColor const value)
 {
@@ -36,7 +39,7 @@ QString const playerColorToString(PlayerColor value)
         return QStringLiteral("Gray");
     }
 
-    return QStringLiteral("");
+    return QString();
 }
 
 PlayerColor parsePlayerColor(QString const& value)
