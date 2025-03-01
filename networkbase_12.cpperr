@@ -1,0 +1,130 @@
+
+Phase : Main Static Analysis - Stat
+Group : crownhunters
+Source : /home/student/sc0156/Documents/crownhunters/networkbase.cpp
+GLH File : /home/student/sc0156/ldra_workarea/crownhunters_tbwrkfls/crownhunters.glh
+Executable : /apps/ldra2019/ldra_toolsuite/cpp/cppstat_900
+Message produced on: Thu Dec 10 2020 at 23:38:07
+
+SOURCE FILE LINE NUMBER =  1173 STKPTR = 
+          
+ TOP OF TREE =   2016  PRCDV 
+ FROM   TO   INFO LENGTH NAME 
+
+     9    27     1    19playerColorToString
+    32    47     2    16parsePlayerColor
+    52    75     3    24NetworkBase::NetworkBase
+    80    90     4    11sendMessage
+    95   118     4    24NetworkBase::sendMessage
+   123   133     5    11joinRequest
+   138   161     5    24NetworkBase::joinRequest
+   166   177     6    12joinResponse
+   182   206     6    25NetworkBase::joinResponse
+   211   225     7    15positionMessage
+   230   257     7    28NetworkBase::positionMessage
+   262   274     8    13bulletMessage
+   279   304     8    26NetworkBase::bulletMessage
+   309   321     9    13healthMessage
+   326   351     9    26NetworkBase::healthMessage
+   356   371    10    16gameStartMessage
+   376   404    10    29NetworkBase::gameStartMessage
+   409   422    11    14gameEndMessage
+   427   453    11    27NetworkBase::gameEndMessage
+   458   476    12    19playerJoinedMessage
+   481   512    12    32NetworkBase::playerJoinedMessage
+   517   533    13    17playerLeftMessage
+   538   567    13    30NetworkBase::playerLeftMessage
+   572   582    14    11chatMessage
+   587   610    14    24NetworkBase::chatMessage
+   615   630    15    16parseJoinRequest
+   635   663    15    29NetworkBase::parseJoinRequest
+   668   684    16    17parseJoinResponse
+   689   718    16    30NetworkBase::parseJoinResponse
+   723   742    17    20parsePositionMessage
+   747   779    17    33NetworkBase::parsePositionMessage
+   784   801    18    18parseHealthMessage
+   806   836    18    31NetworkBase::parseHealthMessage
+   841   858    19    18parseBulletMessage
+   863   893    19    31NetworkBase::parseBulletMessage
+   898   918    20    21parseGameStartMessage
+   923   956    20    34NetworkBase::parseGameStartMessage
+   961   979    21    19parseGameEndMessage
+   984  1015    21    32NetworkBase::parseGameEndMessage
+  1020  1043    22    24parsePlayerJoinedMessage
+  1048  1084    22    37NetworkBase::parsePlayerJoinedMessage
+  1089  1110    23    22parsePlayerLeftMessage
+  1115  1149    23    35NetworkBase::parsePlayerLeftMessage
+  1154  1169    24    16parseChatMessage
+  1174  1202    24    29NetworkBase::parseChatMessage
+  1207  1218    25    12parseMessage
+  1223  1247    25    25NetworkBase::parseMessage
+  1252  1262    26    11onReadyRead
+  1267  1290    26    24NetworkBase::onReadyRead
+  1295  1302    27     8toString
+  1307  1327    29    21NetworkBase::toString
+  1332  1339    30     8tryParse
+  1344  1364    32    21NetworkBase::tryParse
+  1369  1387    33    19onParsedJoinRequest
+  1392  1423    33    32NetworkBase::onParsedJoinRequest
+  1428  1447    34    20onParsedJoinResponse
+  1452  1484    34    33NetworkBase::onParsedJoinResponse
+  1489  1511    35    23onParsedPositionMessage
+  1516  1551    35    36NetworkBase::onParsedPositionMessage
+  1556  1576    36    21onParsedBulletMessage
+  1581  1614    36    34NetworkBase::onParsedBulletMessage
+  1619  1639    37    21onParsedHealthMessage
+  1644  1677    37    34NetworkBase::onParsedHealthMessage
+  1682  1705    38    24onParsedGameStartMessage
+  1710  1746    38    37NetworkBase::onParsedGameStartMessage
+  1751  1772    39    22onParsedGameEndMessage
+  1777  1811    39    35NetworkBase::onParsedGameEndMessage
+  1816  1842    40    27onParsedPlayerJoinedMessage
+  1847  1886    40    40NetworkBase::onParsedPlayerJoinedMessage
+  1891  1915    41    25onParsedPlayerLeftMessage
+  1920  1957    41    38NetworkBase::onParsedPlayerLeftMessage
+  1962  1980    42    19onParsedChatMessage
+  1985  2016    42    32NetworkBase::onParsedChatMessage
+
+
+ The message below may have been generated as a result
+ of incorrect LDRA Testbed Analysis Scope settings.
+ Check that your code compiles and as part of this 
+ process, document the compiler preprocessor settings.
+ These settings then need to be reflected in the LDRA 
+ Testbed data file SYSPPVAR.DAT. See Macro Expansion in 
+ the User Manual for further details.
+
+
+      3 NUMBER OF ENTRIES 
+      1    564     57 /home/student/sc0156/Documents/crownhunters/networkbase.h
+      4     29     57 /home/student/sc0156/Documents/crownhunters/playercolor.h
+     30    106     54 /home/student/sc0156/Documents/crownhunters/settings.h
+   1793 NUMBER OF LINES
+
+
+      3 FILES HAVE BEEN OPENED FOR INCLUSION. THEY ARE:
+
+           
+      /home/student/sc0156/Documents/crownhunters/networkbase.h
+      /home/student/sc0156/Documents/crownhunters/playercolor.h
+      /home/student/sc0156/Documents/crownhunters/settings.h
+
+ The total line number is:     1173
+ The local line number is:      609
+ in the file under test: 
+ *******************************************************************************
+ ******                   SYNTACTIC ERROR NO     107                      ******
+ ******                       STATIC ANALYSIS                             ******
+ ******             CHECK THAT PROGRAM BEING ANALYSED COMPILES            ******
+ ******              THEN CONTACT TESTBED MAINTENANCE EITHER              ******
+ ******                            LOCALLY, OR                            ******
+ ******                        AT L. D. R. A.  LTD.                       ******
+ ******                       TEL. NO. (0151) 649 9300                    ******
+ ******                       FAX. NO. (0151) 649 9666                    ******
+ ******                        email: support@ldra.com                    ******
+ ******                QUOTING THE FOLLOWING ERROR MESSAGE.               ******
+ *******************************************************************************
+
+
+
+ RETURN STATEMENT WITH NO MATCHING PROC   

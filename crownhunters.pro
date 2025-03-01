@@ -1,0 +1,88 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2020-10-30T17:59:17
+#
+#-------------------------------------------------
+
+QT       += core gui network sql
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
+
+TARGET = crownhunters
+TEMPLATE = app
+
+# The following define makes your compiler emit warnings if you use
+# any feature of Qt which has been marked as deprecated (the exact warnings
+# depend on your compiler). Please consult the documentation of the
+# deprecated API in order to know how to port your code away from it.
+DEFINES += QT_DEPRECATED_WARNINGS
+
+# You can also make your code fail to compile if you use deprecated APIs.
+# In order to do so, uncomment the following line.
+# You can also select to disable deprecated APIs only up to a certain version of Qt.
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+
+CONFIG += c++11
+
+SOURCES += \
+        bulletitem.cpp \
+        changeusername.cpp \
+        configdialog.cpp \
+        crownitem.cpp \
+        gamestartoverlayitem.cpp \
+        healthbaritem.cpp \
+        healthitem.cpp \
+        helpdialog.cpp \
+        hostconfigdialog.cpp \
+        main.cpp \
+        mapscene.cpp \
+        networkbase.cpp \
+        networkclient.cpp \
+        networkhost.cpp \
+        networkwidget.cpp \
+        playercolor.cpp \
+        playeritem.cpp \
+        ranksdialog.cpp \
+        respawnoverlayitem.cpp \
+        testwindow.cpp \
+        wallitem.cpp
+
+HEADERS += \
+        bulletitem.h \
+        changeusername.h \
+        configdialog.h \
+        crownitem.h \
+        gamestartoverlayitem.h \
+        healthbaritem.h \
+        healthitem.h \
+        helpdialog.h \
+        hostconfigdialog.h \
+        mapscene.h \
+        networkbase.h \
+        networkclient.h \
+        networkhost.h \
+        networkwidget.h \
+        playercolor.h \
+        playeritem.h \
+        ranksdialog.h \
+        respawnoverlayitem.h \
+        settings.h \
+        testwindow.h \
+        wallitem.h
+
+FORMS += \
+        changeusername.ui \
+        configdialog.ui \
+        helpdialog.ui \
+        hostconfigdialog.ui \
+        networkwidget.ui \
+        ranksdialog.ui \
+        testwindow.ui
+
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+	resources.qrc

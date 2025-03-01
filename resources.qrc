@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/bullet.png</file>
+        <file>images/floorTile.png</file>
+        <file>images/health-1.png</file>
+        <file>images/health-2.png</file>
+        <file>images/health-3.png</file>
+        <file>images/health-4.png</file>
+        <file>images/health-5.png</file>
+        <file>images/health-6.png</file>
+        <file>images/player-black.png</file>
+        <file>images/player-blue.png</file>
+        <file>images/player-cyan.png</file>
+        <file>images/player-gray.png</file>
+        <file>images/player-green.png</file>
+        <file>images/player-magenta.png</file>
+        <file>images/player-red.png</file>
+        <file>images/player-white.png</file>
+        <file>images/playerwithcrown-black.png</file>
+        <file>images/playerwithcrown-blue.png</file>
+        <file>images/playerwithcrown-cyan.png</file>
+        <file>images/playerwithcrown-gray.png</file>
+        <file>images/playerwithcrown-green.png</file>
+        <file>images/playerwithcrown-magenta.png</file>
+        <file>images/playerwithcrown-red.png</file>
+        <file>images/playerwithcrown-white.png</file>
+        <file>images/startingcrown.png</file>
+        <file>images/respawnOverlay-1.png</file>
+        <file>images/respawnOverlay-2.png</file>
+        <file>images/respawnOverlay-3.png</file>
+        <file>images/respawnOverlay-4.png</file>
+        <file>images/respawnOverlay-5.png</file>
+        <file>images/respawnOverlay-blank.png</file>
+        <file>images/gameStart-1.png</file>
+        <file>images/gameStart-2.png</file>
+        <file>images/gameStart-3.png</file>
+        <file>images/gameStart-4.png</file>
+        <file>images/gameStart-5.png</file>
+        <file>images/gameStart-6.png</file>
+        <file>images/gameStart-7.png</file>
+        <file>images/gameStart-8.png</file>
+        <file>images/gameStart-9.png</file>
+        <file>images/gameStart-blank.png</file>
+        <file>images/gameStart-10.png</file>
+    </qresource>
+</RCC>
